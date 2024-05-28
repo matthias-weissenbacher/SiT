@@ -1,2 +1,2 @@
 # Sit
- Symmetry-invariant Transformers for Generalisation in Reinforcement Learning
+ Symmetry-invariant Transformers for Generalisation in Reinforcement Learning, accepted to ICML 2024.  
