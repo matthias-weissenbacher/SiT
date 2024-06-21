@@ -1,3 +1,52 @@
+# ------------------------------------------------------------------------------------
+# SiT: Symmetry-Invariant Transformers for Generalisation in Reinforcement Learning
+# ------------------------------------------------------------------------------------
+#
+# Copyright (C) 2024 by Matthias Weissenbacher
+#
+# This file is part of the implementation for the ICML 2024 paper titled
+# "SiT: Symmetry-Invariant Transformers for Generalisation in Reinforcement Learning".
+# The implementation details are confidential and proprietary.
+#
+# ------------------------------------------------------------------------------------
+# Abstract:
+# ------------------------------------------------------------------------------------
+# A major open challenge in reinforcement learning (RL) is the effective deployment
+# of a trained policy to out-of-distribution data and semantically-similar environments.
+# To overcome these limitations, we propose an invariant as well as equivariant scalable
+# Transformer model that respects various local and global symmetry transformations
+# of the input data. We present a symmetry-preserving neural network attention layer
+# by adapting the self-attention mechanism to maintain graph symmetries, referred to
+# as Graph Symmetric Attention mechanism (GSA). Our model leverages the interplay
+# of local vs. global information to attain inherent out-of-distribution generalization.
+# The invariant and equivariant latent representations are then used as a starting point
+# for subsequent policy and value networks. Building on vision transformers, we
+# demonstrate improved generalization using our approach on MiniGrid and Procgen
+# environments.
+#
+# ------------------------------------------------------------------------------------
+# License:
+# ------------------------------------------------------------------------------------
+# This software is provided "as is", without warranty of any kind, express or implied,
+# including but not limited to the warranties of merchantability, fitness for a
+# particular purpose and noninfringement. In no event shall the authors or copyright
+# holders be liable for any claim, damages or other liability, whether in an action
+# of contract, tort or otherwise, arising from, out of or in connection with the
+# software or the use or other dealings in the software.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# ------------------------------------------------------------------------------------
+
+
 import numpy as np
 import torch
 import torch.nn as nn
